@@ -6,6 +6,16 @@
 	Author: Enrique Ramírez
 	Autor URI: http://enrique-ramirez.com
 */
+:root {
+    --farback: #001C02;
+    --txcol: #D3D0CB;
+    --highlight: #78C0E0;
+    --lowlight: #449DD1;
+    --bright: #D3D0CB;
+    --althigh: #A3320B;
+    --altlow: #6B0504;
+    --altback: #393E41;
+}
 
 /* Imports */
 @import url("reset.css");
@@ -17,24 +27,24 @@
 /***** Global *****/
 /* Body */
 body {
-    background: #FDF6E3;
-    color: #8A887B;
+    background: var(--farback);
+    color: var(--txcol);
     font-size: 16px;
     font-family: 'Crimson Text', 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /*line-height: 1.429;*/
     margin: 0;
     padding: 0;
     text-align: left;
-    text-shadow:0px 0px 1px #BFBFBF;
+    text-shadow:0px 0px 1px var(--altback);
     padding-top:120px;
 }
 
 code{
-    border:1px solid #eaeaea;
-    background-color:#f8f8f8;
+    border:1px solid var(--farback);
+    background-color: var(--farback);
     font-size:11px;
     font-style:normal;
-    color:#777;
+    color: var(--txcol);
     -moz-border-radius:7px;
     -webkit-border-radius:7px;
     padding-left:3px;
@@ -53,7 +63,7 @@ h5 {font-size: 1.143em}	/* 16px */
 h6 {font-size: 1em}		/* 14px */
 
 h1, h2, h3, h4, h5, h6 {
-    text-shadow:0px 0px 1px #BFBFBF;
+    text-shadow:0px 0px 1px var(--bright);
 	font-weight: normal;
     font-style: normal;
 	line-height: 50px;
@@ -67,7 +77,7 @@ h1 {
 
 h3, h4, h5, h6 { margin-top: .8em; }
 	
-hr { border: 1px dotted #8A887B; }
+hr { border: 1px dotted var(--bright); }
 
 /* Anchors */
 a {outline: 0;}
@@ -121,7 +131,7 @@ dl {margin: 0 0 1.5em 0;}
 dt {font-weight: bold;}
 dd {margin-left: 1.5em;}
 
-pre{background-color: #000; padding: 10px; color: #fff; margin: 10px; overflow: auto;}
+pre{background-color: var(--altback); padding: 10px; color: var(--txcol); margin: 10px; overflow: auto;}
 
 /* Quotes */
 blockquote {
@@ -180,7 +190,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	#banner h1 {font-size: 51px; line-height: 0;}
 	#banner h1 a:link, #banner h1 a:visited {
         text-align:center;
-		color: #383732;
+		color: var(--althigh);
 		display: block;
 		font-weight: normal;
 		margin: 0 0 .4em .2em;
@@ -219,7 +229,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 		/*height: 30px;*/
         padding: 5px;
 		text-decoration: none;
-        color: #8A887B;
+        color: var(--altlow);
 	}
 	#banner nav a:hover, #banner nav a:active,
 	#banner nav .active a:link, #banner nav .active a:visited {
@@ -255,7 +265,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 }
 
 #featured figure {
-	border: 2px solid #eee;
+	border: 2px solid var(--bright);
 	float: right;
 	margin: 0.786em 2em 0 5em;
 	width: 248px;
@@ -265,8 +275,8 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 #featured h2 {color: inherit; font-size: 1.714em; margin-bottom: 0.333em;}
 #featured h3 {font-size: 1.429em; margin-bottom: .5em;}
 
-#featured h3 a:link, #featured h3 a:visited {color: #000305; text-decoration: none;}
-#featured h3 a:hover, #featured h3 a:active {color: #fff;}
+#featured h3 a:link, #featured h3 a:visited {color: var(--lowlight); text-decoration: none;}
+#featured h3 a:hover, #featured h3 a:active {color: var(--highlight);}
 
 /*
 	Body
@@ -289,7 +299,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 #extras {margin: 0 auto 3em auto; overflow: hidden;}
 
 #extras ul {list-style: none; margin: 0;}
-#extras li {border-bottom: 1px solid #fff;}
+#extras li {border-bottom: 1px solid var(--bright);}
 #extras h2 {
 	color: inherit;
 	font-size: 1.429em;
@@ -298,14 +308,14 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 }
 
 #extras a:link, #extras a:visited {
-	color: #444;
+	color: var(--lowlight);
 	display: block;
-	border-bottom: 1px solid #F4E3E3;
+	border-bottom: 1px solid var(--bright);
 	text-decoration: none;
 	padding: .3em .25em;
 }
 
-#extras a:hover, #extras a:active {color: #fff;}
+#extras a:hover, #extras a:active {color: var(--bright);}
 
 	/* Blogroll */
 	#extras .blogroll {
@@ -356,7 +366,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 }
 
 #about .primary {float: left; width: 165px;}
-#about .primary strong {color: #C64350; display: block; font-size: 1.286em;}
+#about .primary strong {color: var(--highlight); display: block; font-size: 1.286em;}
 #about .photo {float: left; margin: 5px 20px;}
 
 #about .url:link, #about .url:visited {text-decoration: none;}
@@ -380,8 +390,8 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #content > .hentry {padding: 1em 0;}
 .hentry img{display : none ;}
 .entry-title {text-align:center;font-size: 31px; font-style:italic; margin-bottom: 10px; margin-top: 0;}
-.entry-title a:link, .entry-title a:visited {text-decoration: none; color: #8A887B;}
-.entry-title a:visited {background-color: #fff;}
+.entry-title a:link, .entry-title a:visited {text-decoration: none; color: var(--lowlight);}
+.entry-title a:visited {background-color: var(--lowlight);}
 
 .hentry .post-info * {font-style: normal;}
 
@@ -404,7 +414,7 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	
 	/* About the Author */
 	#about-author {
-		background: #f9f9f9;
+		background: var(--altback);
 		clear: both;
 		font-style: normal;
 		margin: 2em 0;
@@ -416,18 +426,18 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	}
 	
 	#about-author strong {
-		color: #C64350;
+		color: var(--highlight);
 		clear: both;
 		display: block;
 		font-size: 1.429em;
 	}
 	
-	#about-author .photo {border: 1px solid #ddd; float: left; margin: 5px 1em 0 0;}
+	#about-author .photo {border: 1px solid var(--bright); float: left; margin: 5px 1em 0 0;}
 	
 	/* Comments */
 	#comments-list {list-style: none; margin: 0 1em;}
 	#comments-list blockquote {
-		background: #f8f8f8;
+		background: var(--altback);
 		clear: both;
 		font-style: normal;
 		margin: 0;
@@ -437,9 +447,9 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 		-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;
 	}
-	#comments-list footer {color: #888; padding: .5em 1em 0 0; text-align: right;}
+	#comments-list footer {color: var(--txcol); padding: .5em 1em 0 0; text-align: right;}
 	
-	#comments-list li:nth-child(2n) blockquote {background: #F5f5f5;}
+	#comments-list li:nth-child(2n) blockquote {background: var(--farback);}
 	
 	/* Add a Comment */
 	#add-comment label {clear: left; float: left; text-align: left; width: 150px;}
