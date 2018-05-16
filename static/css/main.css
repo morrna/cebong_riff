@@ -190,7 +190,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	#banner h1 {font-size: 51px; line-height: 0;}
 	#banner h1 a:link, #banner h1 a:visited {
         text-align:center;
-		color: var(--althigh);
+		color: var(--txcol);
 		display: block;
 		font-weight: normal;
 		margin: 0 0 .4em .2em;
@@ -229,7 +229,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 		/*height: 30px;*/
         padding: 5px;
 		text-decoration: none;
-        color: var(--altlow);
+        color: var(--lowlight);
 	}
 	#banner nav a:hover, #banner nav a:active,
 	#banner nav .active a:link, #banner nav .active a:visited {
@@ -390,8 +390,8 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #content > .hentry {padding: 1em 0;}
 .hentry img{display : none ;}
 .entry-title {text-align:center;font-size: 31px; font-style:italic; margin-bottom: 10px; margin-top: 0;}
-.entry-title a:link, .entry-title a:visited {text-decoration: none; color: var(--lowlight);}
-.entry-title a:visited {background-color: var(--lowlight);}
+.entry-title a:link, .entry-title a:visited {text-decoration: none; color: var(--txcol);}
+.entry-title a:visited {background-color: var(--txcol);}
 
 .hentry .post-info * {font-style: normal;}
 
