@@ -36,7 +36,6 @@ body {
     padding: 0;
     text-align: left;
     text-shadow:0px 0px 1px var(--altback);
-    padding-top:120px;
 }
 
 code{
@@ -470,3 +469,49 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
         padding:0px;
         margin:0px;
     }
+
+/* Nav bar styles */
+ul.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 3em;
+	position: relative;
+}
+.nav li {
+	float: left;
+}
+.nav li a {
+	display: block;
+	padding: 1em;
+	text-decoration: none;
+	text-align: center;
+}
+.nav li a:link {
+	color: var(--txcol);
+}
+.nav li a:visited {
+	color: var(--txcol);
+}
+.nav li a:hover {
+	background-color: var(--altlow);
+}
+.nav li a:active {
+	background-color: var(--althigh);
+}
+.nav .abs-center {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.nav .right-side {
+	float: right;
+}
+.nav li p {
+	display: block;
+	margin: 0;
+	padding: 1em;
+}

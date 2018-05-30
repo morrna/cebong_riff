@@ -36,26 +36,12 @@
 </head>
 
 <body id="index" class="home">
-{% include 'github.html' %}
-        <header id="banner" class="body">
-                <h1><a href="{{ SITEURL }}">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
-                {% if SITETAGLINE %}
-                <div id="tagline">{{SITETAGLINE}}</div>
-                {% endif %}
-                <nav>
-                {% for title, link in MENUITEMS %}
-                    <a href="{{ link }}">{{ title }}</a>&nbsp;
-                {% endfor %}
-                {% if DISPLAY_PAGES_ON_MENU %}
-                {% for page in pages %}
-                    <a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>&nbsp;
-                {% endfor %}
-                {% endif %}
-                {% for cat, null in categories %}
-                    <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>&nbsp;
-                {% endfor %}
-                </nav>
-        </header><!-- /#banner -->
+    <ul class="nav">
+        {% for title, link in MENUITEMS %}
+            <li><a href="{{ link }}">{{ title }}</a></li>
+        {% endfor %}
+        <li class="abs-center"><a href="{{ SITEURL }}">{{ SITENAME }}</a></li>
+    </ul>
         {% block content %}
         {% endblock %}
         <section id="extras" class="body">
