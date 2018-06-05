@@ -471,7 +471,7 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
     }
 
 /* Nav bar styles */
-ul.nav {
+nav#top_bar ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -481,36 +481,36 @@ ul.nav {
 	height: 3em;
 	position: relative;
 }
-.nav li {
+nav#top_bar ul li {
 	float: left;
 }
-.nav li a {
+nav#top_bar ul li a {
 	display: block;
 	padding: 1em;
 	text-decoration: none;
 	text-align: center;
 }
-.nav li a:link {
+nav#top_bar ul li a:link {
 	color: var(--txcol);
 }
-.nav li a:visited {
+nav#top_bar ul li a:visited {
 	color: var(--txcol);
 }
-.nav li a:hover {
+nav#top_bar ul li a:hover {
 	background-color: var(--altlow);
 }
-.nav li a:active {
+nav#top_bar ul li a:active {
 	background-color: var(--althigh);
 }
-.nav .abs-center {
+nav#top_bar ul .abs-center {
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, 0);
 }
-.nav .right-side {
+nav#top_bar ul .right-side {
 	float: right;
 }
-.nav li p {
+nav#top_bar ul li p {
 	display: block;
 	margin: 0;
 	padding: 1em;

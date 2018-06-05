@@ -36,12 +36,14 @@
 </head>
 
 <body id="index" class="home">
-    <ul class="nav">
+    <nav id="top_bar">
+    <ul>
         {% for title, link in MENUITEMS %}
             <li><a href="{{ link }}">{{ title }}</a></li>
         {% endfor %}
         <li class="abs-center"><a href="{{ SITEURL }}">{{ SITENAME }}</a></li>
     </ul>
+    </nav>
         {% block content %}
         {% endblock %}
         <section id="extras" class="body">
