@@ -515,3 +515,21 @@ nav#top_bar ul li p {
 	margin: 0;
 	padding: 1em;
 }
+/* sub menu */
+nav#top_bar ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    margin-top: 3rem;
+    left: 0;
+    display: none;
+}
+nav#top_bar ul li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+nav#top_bar ul li ul li a {
+    width: 100px;
+    background-color: var(--altback);
+}
