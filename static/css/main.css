@@ -173,6 +173,10 @@ aside, nav, article, figure {
 
 /***** Layout *****/
 .body {clear: both; margin: 0 auto; width: 800px;}
+p img { /* for images in blog posts */
+    display: block;
+    margin: 0 auto;
+}
 img.right, figure.right {float: right; margin: 0 0 2em 2em;}
 img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 
