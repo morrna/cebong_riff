@@ -134,7 +134,6 @@ pre{background-color: var(--altback); padding: 10px; color: var(--txcol); margin
 /* Quotes */
 blockquote {
     margin: 20px;
-    font-style: italic;
 }
 cite {}
 
